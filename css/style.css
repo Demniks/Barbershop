@@ -263,11 +263,6 @@ body {
 
 /* About */
 
-.about {
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
-}
-
 .about-container {
   display: flex;
   gap: 30px;
@@ -276,9 +271,6 @@ body {
 .about-list {
   display: flex;
   gap: 30px;
-}
-
-.about-item {
 }
 
 .about-content {
@@ -323,8 +315,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
 }
 .prices-top-text {
   color: rgba(157, 164, 189, 0.6);
@@ -392,9 +382,6 @@ body {
 }
 
 /* Benefits */
-
-.benefits {
-}
 
 .benefits-container {
   display: flex;
@@ -517,9 +504,6 @@ body {
   gap: 10px;
 }
 
-.barbers-soc-item {
-}
-
 .barbers-soc-link {
   display: flex;
   justify-content: center;
@@ -528,27 +512,21 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
-  /* fill: #fff; */
   fill: #303030;
 }
 
 .barbers-soc-link:hover,
 .barbers-soc-link:focus {
-  /* background-color: teal; */
   fill: #ff6c00;
 }
 
 /* Gallery */
 
-.gallery {
-}
 .gallery-top-text {
   color: #303030;
   margin-bottom: 44px;
 }
 
-.visually-hidden {
-}
 .gallery-list {
   display: flex;
   gap: 30px;
@@ -669,10 +647,6 @@ body {
   margin-top: 20px;
 }
 
-/* .contacts-item:not(:last-child){
-  margin-bottom: 20px;
-} */
-
 .contacts-link {
   font-size: 18px;
   line-height: 1.67;
@@ -683,7 +657,6 @@ body {
 
 .contacts-link-mail {
   border-bottom: 1px solid #9da4bd;
-  /* text-decoration-line: underline; */
 }
 
 .contacts-link:hover,
@@ -734,8 +707,6 @@ body {
   gap: 40px;
 }
 
-.footer-item {
-}
 .footer-link {
   font-size: 11px;
   font-weight: 600;
