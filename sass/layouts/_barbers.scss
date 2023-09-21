@@ -1,0 +1,67 @@
+.barbers {
+  background-color: #f7f7f7;
+}
+
+.barbers-top-text {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.barbers-title {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.barbers-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.barbers-item-content {
+  padding-top: 30px;
+}
+
+.barbers-item-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  color: #303030;
+  margin-bottom: 8px;
+}
+
+.barbers-item-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  color: #ff6c00;
+  margin-bottom: 30px;
+}
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  fill: #303030;
+  transition: fill 300ms linear;
+  &:hover,
+  &:focus {
+    fill: #ff6c00;
+  }
+}

@@ -1,0 +1,90 @@
+.contact-wrap {
+  background-color: #191c26;
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  width: calc(50% - 15px);
+  padding-left: 100px;
+}
+
+.contacts-title {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.contacts-adress {
+  font-style: normal;
+  margin-bottom: 70px;
+}
+
+.contacts-adress-link {
+  display: flex;
+  align-items: flex-start;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67; /* 166.667% */
+  letter-spacing: 0.36px;
+  color: #9da4bd;
+  fill: #9da4bd;
+  margin-bottom: 20px;
+  transition: color 300ms linear;
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+    // fill: #ff6c00;
+  }
+}
+
+.contacts-item + .contacts-item {
+  margin-top: 20px;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+  color: #9da4bd;
+  transition: color 300ms linear;
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
+}
+
+.contacts-link-mail {
+  text-decoration: underline;
+}
+
+.contacts-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contacts-schedule {
+  font-size: 18px;
+  line-height: 1.67; /* 166.667% */
+  letter-spacing: 0.36px;
+  color: #9da4bd;
+}
+
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 16px;
+}
