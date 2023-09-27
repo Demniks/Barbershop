@@ -1,13 +1,21 @@
 .gallery-top-text {
-    color: #303030;
-    margin-bottom: 44px;
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-item {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
   }
-  
-  .gallery-list {
-    display: flex;
-    gap: 30px;
-  }
-  
-  .gallery-item {
+
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
   }
+}

@@ -1,5 +1,5 @@
 body {
-  font-family: "Opem Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: var(--main-color);
 }
 
@@ -9,4 +9,8 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.no-scroll{
+  overflow: hidden;
 }

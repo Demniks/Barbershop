@@ -1,12 +1,20 @@
 .footer {
-  padding: 55px;
+  padding: 44px 0;
   background-color: #f7f7f7;
+
+  @media screen and (min-width: 768px) {
+    padding: 55px 0;
+  }
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .footer-copy {
@@ -21,6 +29,11 @@
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
   &::before {
     content: "";
     width: 60px;

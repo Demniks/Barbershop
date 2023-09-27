@@ -49,6 +49,64 @@
           >
           <button class="header-btn btn" type="button">Online-booking</button>
         </div>
+        <button class="menu-open-btn" type="button" data-menu-open>
+          <svg class="menu-icon-open" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+          <button class="menu-close-btn" type="button" data-menu-close>
+            <svg class="menu-icon-close" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#about">About</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#prices"
+                >Services and prices</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#barbers">Barbers</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <div class="mob-menu-connect">
+            <a class="mob-menu-tel link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button class="mob-menu-btn btn" type="button">
+              Online-booking
+            </button>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -90,20 +148,42 @@
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
-              <img
-                src="./images/about-img-1.jpg"
-                alt="haircut"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-img-1.jpg    1x,
+                    ./images/about-img-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-img-1-tab.jpg    1x,
+                    ./images/about-img-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img src="./images/about-img-1.jpg" alt="haircut" width="330" />
+              </picture>
             </li>
             <li class="about-item">
-              <img
-                src="./images/about-img-2.jpg"
-                alt="haircut"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-img-2.jpg    1x,
+                    ./images/about-img-2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-img-2-tab.jpg    1x,
+                    ./images/about-img-2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img src="./images/about-img-2.jpg" alt="haircut" width="330" />
+              </picture>
             </li>
           </ul>
           <div class="about-content">
@@ -127,7 +207,7 @@
         </div>
       </section>
       <section class="prices section" id="prices">
-        <div class="container">
+        <div class="container prices-container">
           <p class="prices-top-text top-text">
             Spend your time with the best masters
           </p>
@@ -177,19 +257,19 @@
         <div class="container benefits-container">
           <ul class="benefits-list list">
             <li class="benefits-item">
-              <span>600</span>
+              <span>600<sup class="benefits-sup">+</sup></span>
               <p class="benefits-item-text">Satisfied customers per day</p>
             </li>
             <li class="benefits-item">
-              <span>50</span>
+              <span>50<sup class="benefits-sup">+</sup></span>
               <p class="benefits-item-text">Awards for excellent service</p>
             </li>
             <li class="benefits-item">
-              <span>20</span>
+              <span>20<sup class="benefits-sup">+</sup></span>
               <p class="benefits-item-text">Kyiv’s best barbers</p>
             </li>
             <li class="benefits-item">
-              <span>100</span>
+              <span>100<sup class="benefits-sup">+</sup></span>
               <p class="benefits-item-text">Gifts for regular customers</p>
             </li>
           </ul>
@@ -207,18 +287,42 @@
       </section>
       <section class="barbers section" id="barbers">
         <div class="container">
-          <p class="barbers-top-text top-text">
-            For true enjoyers of the atmosphere
-          </p>
-          <h2 class="barbers-title section-title">Our barbers</h2>
+          <div class="barbers-thumb">
+            <p class="barbers-top-text top-text">
+              For true enjoyers of the atmosphere
+            </p>
+            <h2 class="barbers-title section-title">Our barbers</h2>
+          </div>
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <img
-                src="./images/barbers-img-1.jpg"
-                alt="haircut"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers-img-1.jpg    1x,
+                    ./images/barbers-img-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers-img-1-tab.jpg    1x,
+                    ./images/barbers-img-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers-img-1-mob.jpg    1x,
+                    ./images/barbers-img-1-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/barbers-img-1.jpg"
+                  alt="haircut"
+                  width="370"
+                />
+              </picture>
               <div class="barbers-item-content">
                 <h3 class="barbers-item-title">John Smith</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
@@ -261,12 +365,34 @@
               </div>
             </li>
             <li class="barbers-item">
-              <img
-                src="./images/barbers-img-2.jpg"
-                alt="haircut"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers-img-2.jpg    1x,
+                    ./images/barbers-img-2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers-img-2-tab.jpg    1x,
+                    ./images/barbers-img-2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers-img-2-mob.jpg    1x,
+                    ./images/barbers-img-2-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/barbers-img-2.jpg"
+                  alt="haircut"
+                  width="370"
+                />
+              </picture>
               <div class="barbers-item-content">
                 <h3 class="barbers-item-title">Michele Doe</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
@@ -309,12 +435,34 @@
               </div>
             </li>
             <li class="barbers-item">
-              <img
-                src="./images/barbers-img-3.jpg"
-                alt="haircut"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers-img-3.jpg    1x,
+                    ./images/barbers-img-3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers-img-3-tab.jpg    1x,
+                    ./images/barbers-img-3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers-img-3-mob.jpg    1x,
+                    ./images/barbers-img-3-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/barbers-img-3.jpg"
+                  alt="haircut"
+                  width="370"
+                />
+              </picture>
               <div class="barbers-item-content">
                 <h3 class="barbers-item-title">Alan Black</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
@@ -367,43 +515,131 @@
           <h2 class="visually-hidden">Gallery</h2>
           <ul class="gallery-list list">
             <li class="gallery-item">
-              <img
-                src="./images/gallery-img-1.jpg"
-                alt="haircut"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-img-1.jpg    1x,
+                    ./images/gallery-img-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-1-tablet.jpg    1x,
+                    ./images/gallery-img-1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-1-mob.jpg    1x,
+                    ./images/gallery-img-1-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery-img-1.jpg"
+                  alt="haircut"
+                  width="418"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
-              <img
-                src="./images/gallery-img-2.jpg"
-                alt="haircut"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-img-2.jpg    1x,
+                    ./images/gallery-img-2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-2-tablet.jpg    1x,
+                    ./images/gallery-img-2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-2-mob.jpg    1x,
+                    ./images/gallery-img-2-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery-img-2.jpg"
+                  alt="haircut"
+                  width="418"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
-              <img
-                src="./images/gallery-img-3.jpg"
-                alt="haircut"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-img-3.jpg    1x,
+                    ./images/gallery-img-3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-3-tablet.jpg    1x,
+                    ./images/gallery-img-3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-3-mob.jpg    1x,
+                    ./images/gallery-img-3-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery-img-3.jpg"
+                  alt="haircut"
+                  width="418"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
-              <img
-                src="./images/gallery-img-4.jpg"
-                alt="haircut"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-img-4.jpg    1x,
+                    ./images/gallery-img-4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-4-tablet.jpg    1x,
+                    ./images/gallery-img-4-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-4-mob.jpg    1x,
+                    ./images/gallery-img-4-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery-img-4.jpg"
+                  alt="haircut"
+                  width="418"
+                />
+              </picture>
             </li>
           </ul>
         </div>
       </section>
       <div class="contact-wrap">
-        <div class="container contacts-container">
-          <section class="online section">
+        <div class="contacts-container">
+          <section class="online section container">
             <h2 class="online-title section-title">Online-booking</h2>
             <form class="online-form">
               <input
@@ -428,43 +664,47 @@
           </section>
           <section class="contacts section" id="contacts">
             <h2 class="contacts-title section-title">Contacts</h2>
-            <address class="contacts-adress">
-              <a
-                class="contacts-adress-link link"
-                href="https://goo.gl/maps/QyXQf4swm1iKhcrj7"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg class="contacts-icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-location2"></use>
-                </svg>
-                st. Vasilkivska, 7A <br />
-                Kyiv, 08132</a
-              >
-              <ul class="contacts-list list">
-                <li class="contacts-item">
-                  <a class="contacts-link link" href="tel:+380441111111">
-                    <svg class="contacts-icon" width="24" height="24">
-                      <use href="./images/symbol-defs.svg#icon-phone"></use>
-                    </svg>
-                    +38 044 111 11 11
-                  </a>
-                </li>
-                <li class="contacts-item">
-                  <a
-                    class="contacts-link contacts-link-mail link"
-                    href="mailto:barbershop@email.com"
-                  >
-                    <svg class="contacts-icon" width="24" height="24">
-                      <use href="./images/symbol-defs.svg#icon-email"></use>
-                    </svg>
-                    barbershop@email.com
-                  </a>
-                </li>
-              </ul>
-            </address>
-            <p class="contacts-subtitle">Working hours</p>
-            <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
+            <div class="contacts-box">
+              <address class="contacts-adress">
+                <a
+                  class="contacts-adress-link link"
+                  href="https://goo.gl/maps/QyXQf4swm1iKhcrj7"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-location2"></use>
+                  </svg>
+                  st. Vasilkivska, 7A <br />
+                  Kyiv, 08132</a
+                >
+                <ul class="contacts-list list">
+                  <li class="contacts-item">
+                    <a class="contacts-link link" href="tel:+380441111111">
+                      <svg class="contacts-icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                      </svg>
+                      +38 044 111 11 11
+                    </a>
+                  </li>
+                  <li class="contacts-item">
+                    <a
+                      class="contacts-link contacts-link-mail link"
+                      href="mailto:barbershop@email.com"
+                    >
+                      <svg class="contacts-icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-email"></use>
+                      </svg>
+                      barbershop@email.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+              <div class="contacts-time">
+                <p class="contacts-subtitle top-text">Working hours</p>
+                <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -494,5 +734,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

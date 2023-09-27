@@ -1,10 +1,17 @@
 .online {
-  width: calc(50% - 15px);
+  @media screen and (min-width: 1200px) {
+    width: calc(50% - 15px);
+  }
 }
 
 .online-title {
+  text-align: center;
   color: #fff;
   margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .online-form {
@@ -14,9 +21,16 @@
 }
 
 .online-input {
-  width: 270px;
-  height: 24px;
+  width: 480px;
   margin-bottom: 44px;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 24px;
+  }
 }
 
 .online-item {
@@ -51,5 +65,9 @@
 }
 
 .online-btn {
+  margin: 0 auto;
   color: var(--main-color);
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
